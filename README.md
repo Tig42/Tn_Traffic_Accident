@@ -1,10 +1,13 @@
 # Tn_Traffic_Accident
 Motivation
 Reducing traffic accidents, especially serious accidents, is nevertheless always an important challenge. The proactive approach, one of the two main approaches for dealing with traffic safety problems, focuses on preventing potential unsafe road conditions from occurring in the first place. For the effective implementation of this approach, accident prediction and severity prediction are critical. If we can identify the patterns of how these serious accidents happen and the key factors.
+
 Objectives
 The objective of this project is to recognize key factors affecting the accident severity
+
 Process
 Data cleaning was first performed to detect and handle corrupt or missing records. EDA (Exploratory Data Analysis) and feature engineering were then done over most features. Finally, Logistic regression, Random Forest Classifier, and EasyEnsemble were used to develop the predictive model.
+
 Traffic Attributes
 ID: This is a unique identifier of the accident record.
 Source: Indicates source of the accident report (i.e. the API which reported the accident.).
@@ -18,6 +21,7 @@ End_Lat: Shows latitude in GPS coordinate of the end point.
 End_Lng: Shows longitude in GPS coordinate of the end point.
 Distance(mi): The length of the road extent affected by the accident.
 Description: Shows natural language description of the accident.
+
 Address Attributes:
 Number: Shows the street number in address field.
 Street: Shows the street name in address field.
@@ -28,6 +32,7 @@ State: Shows the state in address field.
 Zipcode: Shows the zipcode in address field.
 Country: Shows the country in address field.
 Timezone: Shows timezone based on the location of the accident (eastern, central, etc.).
+
 Weather Attributes (11):
 Airport_Code: Denotes an airport-based weather station which is the closest one to location of the accident.
 Weather_Timestamp: Shows the time-stamp of weather observation record (in local time).
@@ -40,6 +45,7 @@ Wind_Direction: Shows wind direction.
 Wind_Speed(mph): Shows wind speed (in miles per hour).
 Precipitation(in): Shows precipitation amount in inches, if there is any.
 Weather_Condition: Shows the weather condition (rain, snow, thunderstorm, fog, etc.).
+
 POI Attributes:
 Amenity: A Point-Of-Interest (POI) annotation which indicates presence of amenity in a nearby location.
 Bump: A POI annotation which indicates presence of speed bump or hump in a nearby location.
@@ -54,12 +60,14 @@ Stop: A POI annotation which indicates presence of stop sign in a nearby locatio
 Traffic_Calming: A POI annotation which indicates presence of traffic_calming means in a nearby location.
 Traffic_Signal: A POI annotation which indicates presence of traffic_signal in a nearby location.
 Turning_Loop: A POI annotation which indicates presence of turning_loop in a nearby location.
+
 Period-of-Day:
 Sunrise_Sunset: Shows the period of day (i.e. day or night) based on sunrise/sunset.
 Civil_Twilight: Shows the period of day(i.e. day or night) based on civil twilight.
 Nautical_Twilight: Shows the period of day (i.e. day or night) based on nautical twilight.
 Astronomical_Twilight: Shows the period of day (i.e. day or night) based on astronomical twilight.
 
+Contents
 Exploratory Data Analysis
 Q1: Where do most accidents happen?
       1.1 Accident visualization: accident severity distribution for each City
